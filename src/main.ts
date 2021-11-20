@@ -1,41 +1,22 @@
-import './style.css'
+import "./style.css";
 
 //const app = document.querySelector<HTMLDivElement>('#app')!
 //console.log(app);
 
+// The primitives types
+let str: string = "ds";
+let num: number = 0;
+let bool: boolean = true;
 
-// STATIC CHECKING
-//const message ="Some text";
-//console.log(message()));
+console.log("The primitives: \n", str, num, bool);
 
+// Arrays types
+let strArr: string[] = ["1", "2"];
+let numArr: Array<number> = [1, 2];
 
-// Non-exception Failures
-//const user = {
-//  name: "Daniel",
-//  age: 26,
-//};
-//user.location;
+console.log("\nArrays types: \n", strArr, numArr);
 
-
-//const announcement = "Hello World!";
-
-//// How quickly can you spot the typos?
-//announcement.toLocaleLowerCase();
-//announcement.toLocaleLowerCase();
-
-//// We probably meant to write this...
-//announcement.toLocaleLowerCase();
-
-//function flipCoin() {
-//  // Meant to be Math.random()
-//  return Math.random() < 0.5;
-//}
-
-//const value = Math.random() < 0.5 ? "a" : "b";
-//if (value !== "a") {
-//  // ...
-//} else if (value === "b") {
-
-//}
-
-// Types for Tooling
+// ANY
+let something: any = { x: 0 };
+something.foo;
+something.bar = () => {};
